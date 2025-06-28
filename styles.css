@@ -1,0 +1,29 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 800px;
+    height: 500px;
+    display: grid;
+    gap: 0;
+    grid-template-columns: 3fr 5fr;
+    grid-template-rows: 50px auto;
+    margin: auto auto;
+}
+
+.search {
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+
+.creature {
+    grid-area: 2 / 1 / span 1 / span 1;
+}
+
+.stats {
+    grid-area: 1 / 2 / span 2 / span 1;
+}
