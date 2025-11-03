@@ -8,22 +8,45 @@
 </head>
 <body>
     <main>
-        <div class="search block">
-            <input id="search-input">
+        <div id="search">
             <button id="search-button"></button>
+            <input id="search-bar" placeholder="Search...">
         </div>
-        <div class="creature block">
-            <div id="creature-name"></div>
-            <div id="creature-id"></div>
-            <div id="types"></div>
+        <div id="creature">
+            <section id="info">
+                <h1 id="id"></h1>
+                <h1 id="name"></h1>
+                <span id="types"></span>
+                <h2 class="hw height"></h2>
+                <h2 class="hw weight"></h2>"
+            </section>
+            <section id="ability">
+                <h3 id="ability-name"></h3>
+                <p id="ability-descr"></p>
+            </section>
         </div>
-        <div class="stats block">
-            <div id="hp"></div>
-            <div id="attack"></div>
-            <div id="defense"></div>
-            <div id="special-attack"></div>
-            <div id="special-defense"></div>
-            <div id="speed"></div>
+        <div id="stats">
+            <h1 id="title"></h1>
+            <ul id="stat-list">
+                <li class="stat">
+                    <p class="value"><span class="stat-bar"></span></p>
+                </li>
+                <li class="stat">
+                    <p class="value"><span class="stat-bar"></span></p>
+                </li>
+                <li class="stat">
+                    <p class="value"><span class="stat-bar"></span></p>
+                </li>
+                <li class="stat">
+                    <p class="value"><span class="stat-bar"></span></p>
+                </li>
+                <li class="stat">
+                    <p class="value"><span class="stat-bar"></span></p>
+                </li>
+                <li class="stat">
+                    <p class="value"><span class="stat-bar"></span></p>
+                </li>
+            </ul>
         </div>
     </main>
     <script src="script.js"></script>
