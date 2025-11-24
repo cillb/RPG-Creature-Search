@@ -1,33 +1,19 @@
-const searchBox = document.getElementById("search-input");
-const searchButton = document.getElementById("search-button");
 
-const creName = document.getElementById("creature-name");
-const creId = document.getElementById("creature-id");
-const creTypes = document.getElementById("types");
+const searchBtn = document.getElementById("search-button");
+const searchInput = document.getElementById("search-bar");
 
-const hp = document.getElementById("hp");
-const attack = document.getElementById("attack");
-const defense = document.getElementById("defense");
-const specAttack = document.getElementById("special-attack");
-const specDefense = document.getElementById("special-defense");
-const speed = document.getElementById("speed");
+const idNum = document.getElementById("creature-id");
+const name = document.getElementById("creature-name");
+const height = document.getElementById("height-value");
+const weight = document.getElementById("weight-value");
 
-const validateSearch = () => {}
+const types = document.getElementById("types");
 
-const search = () => {}
+const ability = document.getElementById("ability-name");
+const descr = document.getElementById("ability-descr");
 
-const clearTypes = () => {}
+const values = document.getElementsByClassName("value");
 
-const updateCreatureBlock = () => {}
+const validCreatures = "https://rpg-creature-api.freecodecamp.rocks/api/creatures";
+const creatureUrl = "https://rpg-creature-api.freecodecamp.rocks/api/creature/";
 
-const updateStatsBlock = () => {}
-
-const animateStats = () => {}
-
-searchButton.addEventListener("click", () => {});
-
-searchBox.addEventListener("keydown", e => {
-    if (e.key === "Enter") {
-        
-    }
-});
