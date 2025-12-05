@@ -1,29 +1,53 @@
+/* ROOT */
 
 
+/* FONTS */
+
+
+/* ALL */
 * {
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+
+/* MAIN */
 main {
-    width: 800px;
-    height: 500px;
+    height: inherit;
+    width: inherit;
     display: grid;
-    gap: 0;
-    grid-template-columns: 3fr 5fr;
-    grid-template-rows: 50px auto;
-    margin: auto auto;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    grid-template-rows: repeat(12, [row-start] 1fr);
 }
 
-.search {
-    grid-area: 1 / 1 / span 1 / span 1;
+/* SEARCH FIELD */
+#search {
+    grid-column: col-start / span 5;
+    grid-row: row-start / span 1;
 }
 
-.creature {
-    grid-area: 2 / 1 / span 1 / span 1;
+/* CREATURE FIELD */
+#creature {
+    grid-column: col-start / span 5;
+    grid-row: row-start 2 / span 11;
 }
 
-.stats {
-    grid-area: 1 / 2 / span 2 / span 1;
+/* INFO */
+
+
+/* ABILITY */
+
+
+/* STATS FIELD */
+#stats {
+    grid-column: col-start 6 / span 7;
+    grid-row: row-start / span 12;
 }
+
+/* SMALL SCREEN */
+
